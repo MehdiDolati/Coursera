@@ -1,0 +1,72 @@
+﻿* {
+  box-sizing: border-box;
+  clear:right;
+}
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+h1 {
+    text-align:center;
+}
+p {
+    margin:20px;
+}
+.topRight {
+    float:right;
+    width:150px;
+    border:solid;
+    border-width: 1px;
+    border-top: 0px;
+    border-right: 0px;
+    padding:5px;
+    text-align:center;
+}
+/********** desktop  **********/
+@media (min-width: 992px) {
+  .col-lg-4{
+    float: left;
+    border: 1px solid black;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    background-color:lightgray;
+  }
+}
+/********** Tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    border: 1px solid black;
+    margin: 10px;
+    background-color:lightgray;
+  }
+  .col-md-6 {
+    width: calc(50% - 20px);
+  }
+  .col-md-12 {
+    width: calc(100% -20px);
+  }
+}
+/********** Cell Phone **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    border: 1px solid black;
+    margin: 10px;
+    width: calc(100% -20px);
+    background-color:lightgray;
+  }
+}
+
+#Beef {
+    background-color:darkred;
+}
+
+
+#Chiken {
+    background-color:pink;
+}
+
+#Sushi {
+    background-color:khaki;
+}
